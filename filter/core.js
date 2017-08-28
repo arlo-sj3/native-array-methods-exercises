@@ -1,5 +1,5 @@
 function onlyEven (array) {
-  // your code here
+
 };
 
 function onlyOneWord (array) {

@@ -2,14 +2,23 @@
 // are even numbers.
 
 function allEven (input) {
-  return input;
-};
+  return input.every(function(output){
+  return output %2===0
+  });
+}
+
 
 // Check to see if all elements in an array
 // are of the same type.
 
 function allSameType (input) {
-  return input;
+   var first = typeof(input[0])
+  for (i = 0; i < input.length; i++){
+    if(typeof input[i] != first){
+      return false
+    }
+  }
+  return true;
 };
 
 // Check to see if every element in the matrix is
